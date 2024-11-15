@@ -1,0 +1,248 @@
+/* General Styling */
+html{
+    margin: 0;
+    padding: 0;
+    width: 450px; /* Set width of popup */
+    height: 800px; /* Set height of popup*/
+    overflow: hidden;
+} 
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* min-width: 400px; */
+    width: 400px;
+    height: 800px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.4s, color 0.4s;
+    border-radius: 5px;
+    
+}
+
+.container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.toggle{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 0px;
+}
+
+
+
+h1 {
+    font-size:350%;
+    color: #253cb2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    /* padding-left: 12px; */
+}
+
+/* Input Section Styling */
+.input-section {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    width: 99%;
+    padding: 10px;
+    border: 2px solid #253cb2;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+.login-container {
+    display: flex;
+    gap: 10px;
+    /* background-color: #afcfee; */
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    align-items: center;
+    align-content: center;
+}
+
+.search-container{
+width: 80%;
+display: flex;
+    gap: 10px;
+
+}
+
+button {
+    background-color: #253cb2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e2e91;
+}
+
+#delete-btn {
+    background-color: #e32828;
+}
+
+#delete-btn:hover {
+    background-color: #c32121;
+}
+
+#link-btn {
+    background-color: #28a745;
+}
+
+#link-btn:hover {
+    background-color: #218838;
+}
+
+/* List Styling */
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #afcfee;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: #253cb2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Switch Styling */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+    
+}
+body.dark-mode li {
+    background-color: #2d3c49 ;
+    /* other styles */
+}
+
+    
+body.dark-mode a {
+    color: #ffffff;
+    
+}
+
+/* Message Display Area */
+#message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Hidden class to hide the message div */
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+

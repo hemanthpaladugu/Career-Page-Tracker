@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Page Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Career Page Tracker</h1>
+        <span class="toggle">
+            <h6 style="font-size: xx-small; padding-top: 8px;">DARK MODE</h6>
+            <label class="switch" style="margin: left 10px;">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider round"></span>
+                <i class="fas fa-search"></i>
+            </label>
+        </span>
+
+    </div>
+    
+    
+    <!-- Message Display Area -->
+    <div id="message" class="hidden"></div>
+
+    <div class="card">
+        <div class="input-section">
+            <label for="input-el1">Company Name</label>
+            <input type="text" id="input-el1" placeholder="Enter company name">
+            
+            <label for="input-el2">Career Page URL</label>
+            <input type="text" id="input-el2" placeholder="Enter career page URL">
+        </div>
+        
+        <div class="button-container">
+            <button id="link-btn"><i class="fas fa-link"></i> GET LINK</button>
+            <button id="input-btn"><i class="fas fa-save"></i> SAVE INPUT</button>
+            <button id="delete-btn"><i class="fas fa-trash"></i> DELETE ALL</button>
+        </div>
+    </div>
+    <br>
+    <div class="input-group rounded search-container" style="border-radius: 30px;">
+        <input type="search" id="search-input" class="form-control rounded" placeholder="Search for Company " aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+        </span>
+    </div>
+
+   
+    <ul id="ul-el"></ul>
+    <div id="loading-spinner" class="hidden"></div>
+    <script src="index.js"></script>
+</body>
+</html>
